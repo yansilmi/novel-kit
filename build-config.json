@@ -1,4 +1,23 @@
 {
-  "supported_ais": ["cursor"],
+  "supported_ais": [
+    "claude",
+    "gemini",
+    "copilot",
+    "cursor-agent",
+    "cursor",
+    "qwen",
+    "opencode",
+    "windsurf",
+    "codex",
+    "kilocode",
+    "auggie",
+    "roo",
+    "codebuddy",
+    "qoder",
+    "amp",
+    "shai",
+    "q",
+    "bob"
+  ],
   "supported_platforms": ["linux", "win"]
 }

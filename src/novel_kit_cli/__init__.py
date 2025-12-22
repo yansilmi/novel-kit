@@ -64,26 +64,100 @@ REPO_OWNER = "t59688"
 REPO_NAME = "novel-kit"
 REPO_URL = f"https://github.com/{REPO_OWNER}/{REPO_NAME}"
 
-# AI 环境配置（可扩展）
-# 注意：CLI 面向用户，用户没有源码，所以这里硬编码支持的 AI 环境
-# build-config.json 只用于构建脚本和 CI/CD，不用于 CLI
+# AI 环境配置
+# 与 build_novelkit.py 中的 AI_ENV_CONFIG 保持一致
+# 支持所有与 spec-kit 相同的 AI 环境（共 18 个）
 AI_ENV_CONFIG: Dict[str, Dict[str, str]] = {
+    "claude": {
+        "name": "Claude Code",
+        "description": "Anthropic Claude Code CLI 集成",
+        "folder": ".claude",
+    },
+    "gemini": {
+        "name": "Gemini CLI",
+        "description": "Google Gemini CLI 集成",
+        "folder": ".gemini",
+    },
+    "copilot": {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot (VS Code) 集成",
+        "folder": ".github",
+    },
+    "cursor-agent": {
+        "name": "Cursor Agent",
+        "description": "Cursor Agent CLI 集成",
+        "folder": ".cursor",
+    },
     "cursor": {
         "name": "Cursor",
-        "description": "Cursor IDE 集成",
+        "description": "Cursor IDE 集成（cursor-agent 的别名）",
         "folder": ".cursor",
-        "build_function": "build_for_cursor",
     },
-    # TODO: 添加更多 AI 环境支持时：
-    # 1. 更新 build-config.json（用于构建）
-    # 2. 在这里添加配置（用于 CLI）
-    # 3. 在 build_novelkit.py 中添加构建函数
-    # "claude": {
-    #     "name": "Claude Code",
-    #     "description": "Claude Code 集成",
-    #     "folder": ".claude",
-    #     "build_function": "build_for_claude",
-    # },
+    "qwen": {
+        "name": "Qwen Code",
+        "description": "Qwen Code CLI 集成",
+        "folder": ".qwen",
+    },
+    "opencode": {
+        "name": "OpenCode",
+        "description": "OpenCode CLI 集成",
+        "folder": ".opencode",
+    },
+    "windsurf": {
+        "name": "Windsurf",
+        "description": "Windsurf IDE 集成",
+        "folder": ".windsurf",
+    },
+    "codex": {
+        "name": "Codex",
+        "description": "Codex CLI 集成",
+        "folder": ".codex",
+    },
+    "kilocode": {
+        "name": "KiloCode",
+        "description": "KiloCode IDE 集成",
+        "folder": ".kilocode",
+    },
+    "auggie": {
+        "name": "Auggie",
+        "description": "Auggie CLI 集成",
+        "folder": ".augment",
+    },
+    "roo": {
+        "name": "Roo Code",
+        "description": "Roo Code IDE 集成",
+        "folder": ".roo",
+    },
+    "codebuddy": {
+        "name": "CodeBuddy",
+        "description": "CodeBuddy CLI 集成",
+        "folder": ".codebuddy",
+    },
+    "qoder": {
+        "name": "Qoder",
+        "description": "Qoder CLI 集成",
+        "folder": ".qoder",
+    },
+    "amp": {
+        "name": "Amp",
+        "description": "Amp CLI 集成",
+        "folder": ".agents",
+    },
+    "shai": {
+        "name": "SHAI",
+        "description": "SHAI CLI 集成",
+        "folder": ".shai",
+    },
+    "q": {
+        "name": "Amazon Q Developer",
+        "description": "Amazon Q Developer CLI 集成",
+        "folder": ".amazonq",
+    },
+    "bob": {
+        "name": "IBM Bob",
+        "description": "IBM Bob IDE 集成",
+        "folder": ".bob",
+    },
 }
 
 
@@ -625,10 +699,12 @@ def init(
             key: config["description"] 
             for key, config in AI_ENV_CONFIG.items()
         }
+        # 默认选择 cursor（如果存在），否则选择第一个
+        default_key = "cursor" if "cursor" in ai_choices else list(ai_choices.keys())[0]
         selected_ai = select_with_arrows(
             ai_choices,
             "选择 AI 环境:",
-            default_key="cursor"  # 默认选择 cursor
+            default_key=default_key
         )
     
     ai_config = AI_ENV_CONFIG[selected_ai]

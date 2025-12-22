@@ -1,2 +1,6 @@
 dist/
 .genreleases/
+.myenv/
+.venv/
+.env
+**/__pycache__/
