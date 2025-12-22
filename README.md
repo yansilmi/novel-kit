@@ -2,17 +2,27 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![Version](https://img.shields.io/badge/version-0.0.3-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-**AI 辅助小说写作工具包，帮助作者使用 AI 助手创作长篇小说**
-
-[特性](#特性) • [快速开始](#快速开始) • [文档](#文档) • [贡献](#贡献)
+**AI 辅助小说写作工具包，像写代码一样创作长篇小说**
 
 </div>
 
 ---
+```
+
+                            ███╗   ██╗ ██████╗ ██╗   ██╗███████╗██╗     ██╗  ██╗██╗████████╗
+                            ████╗  ██║██╔═══██╗██║   ██║██╔════╝██║     ██║ ██╔╝██║╚══██╔══╝
+                            ██╔██╗ ██║██║   ██║██║   ██║█████╗  ██║     █████╔╝ ██║   ██║
+                            ██║╚██╗██║██║   ██║╚██╗ ██╔╝██╔══╝  ██║     ██╔═██╗ ██║   ██║
+                            ██║ ╚████║╚██████╔╝ ╚████╔╝ ███████╗███████╗██║  ██╗██║   ██║
+                            ╚═╝  ╚═══╝ ╚═════╝   ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝
+
+                                           AI-Assisted Novel Writing Toolkit
+
+```
 
 NovelKit 是一个专为 AI 辅助小说创作设计的 **Slash 命令集合**（不是图形界面应用），提供了完整的命令系统和项目结构，让作者能够高效地使用 AI（如 Cursor）创作长篇小说。通过 `/novel.xxx` 格式的命令，在 AI 环境中直接调用，支持角色管理、世界构建、剧情规划、章节写作等全方位的创作功能。
 
@@ -30,6 +40,15 @@ NovelKit 是一个专为 AI 辅助小说创作设计的 **Slash 命令集合**�
 - 🎯 **状态管理** - 自动追踪当前章节、角色、地点等创作状态
 - 📊 **结构化存储** - 清晰的项目结构，便于版本控制和协作
 - 🛠️ **跨平台支持** - 支持 Linux、macOS 和 Windows
+
+## 截图
+
+<img width="1235" height="709" alt="image" src="https://github.com/user-attachments/assets/ec0cfa88-24e3-4569-8e69-31403a30cc4c" />
+<img width="1235" height="731" alt="image" src="https://github.com/user-attachments/assets/e6235504-4412-4f72-ab73-687248dd7a04" />
+<img width="1233" height="737" alt="屏幕截图 2025-12-22 104257" src="https://github.com/user-attachments/assets/800d9ce3-2e3c-40e3-b92b-b219de116638" />
+<img width="1228" height="724" alt="屏幕截图 2025-12-22 104744" src="https://github.com/user-attachments/assets/7da567ba-47ae-4b0a-a0b9-bce74ec7ea56" />
+
+
 
 ## 📦 安装
 
